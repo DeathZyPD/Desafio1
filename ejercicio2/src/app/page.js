@@ -1,8 +1,8 @@
 "use client"
 import { useState } from 'react';
 import { Headers } from '../components/Header';
-import { ProductList } from '../components/ProductList';
-import {Cantidadcarrito} from '../components/Cantidadcarrito';
+import { ProductList } from '../Components/ProductList';
+
 export default function Home() {
 const [allProducts, setAllProducts] = useState([]);
 const [total, setTotal] = useState(0);

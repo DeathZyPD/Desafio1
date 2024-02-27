@@ -9,15 +9,17 @@
 
 body {
   margin: 0 auto;
-  max-width: 1200px;
-  font-family: "Lato";
-  color: #333;
+  max-width: 1250px;
+  font-family: "arial";
+  color: rgb(0, 30, 69);
+background-color: rgb(107, 158, 158);
+  
 }
 
-.icon-cart {
-  width: 40px;
-  height: 40px;
-  stroke: #000;
+.iconocarrito {
+  width: 50px;
+  height: 50px;
+ 
 }
 
 .icon-cart:hover {
@@ -60,15 +62,17 @@ header {
 }
 
 .container-cart-products {
-  position: absolute;
-  top: 50px;
-  right: 0;
-
-  background-color: #fff;
-  width: 400px;
-  z-index: 1;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 300px;
+    background-color: #8db8c4;
+    width: 12220px; 
+    overflow-x: hidden; 
+    transition: width 0.3s ease; 
+  
+  
 }
 
 .cart-product {
@@ -77,7 +81,7 @@ header {
   justify-content: space-between;
   padding: 30px;
 
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgb(219, 219, 219);
 }
 
 .info-cart-product {
@@ -88,6 +92,7 @@ header {
 
 .titulo-producto-carrito {
   font-size: 20px;
+  font-weight: 500;
 }
 
 .precio-producto-carrito {
@@ -97,31 +102,27 @@ header {
 }
 
 .cantidad-producto-carrito {
-  font-weight: 400;
+  font-weight: 40px;
   font-size: 20px;
 }
 
-.icon-close {
-  width: 25px;
-  height: 25px;
+.iconocerrar {
+  width: 30px;
+  height: 30px;
 }
 
-.icon-close:hover {
-  stroke: red;
-  cursor: pointer;
-}
 
 .tumbal {
   width: 64px;
   height: 64px;
 }
 
-.cart-total {
+.cart-totalpagar {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
-  gap: 20px;
+  padding: 20px ;
+  
 }
 
 .cart-total h3 {
@@ -165,9 +166,7 @@ header {
   overflow: hidden;
 }
 
-.item:hover img {
-  transform: scale(1.2);
-}
+
 
 .info-product {
   padding: 15px 30px;
@@ -191,25 +190,35 @@ header {
   cursor: pointer;
 }
 
-.cart-empty {
+.carritovacio {
   padding: 20px;
   text-align: center;
 }
 
-.btn-clear-all {
-  background-color: #e7e7e7;
+.btnborrar-carrito {
+  background-color: #9abfd4c9;
   color: black;
-  border: none;
-  padding: 15px 15px;
-  font-weight: 600;
+  padding: 5px;
+  font-weight: 800;
   cursor: pointer;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  width: 100%;
+  
+  font-size: 20px;
+  width: 150px;
+  margin-left: 120px;
 }
 
 .hidden {
   display: none;
+}
+
+.small-input{
+  width: 30px;
+}
+
+.close-menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
 }

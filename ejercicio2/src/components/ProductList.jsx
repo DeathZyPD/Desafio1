@@ -33,6 +33,11 @@ return (
 <div className='info-product'>
 <h2>{product.nameProduct}</h2>
 <p className='price'>${product.price}</p>
+<div> 
+    <p className="description">{
+        product.description
+    }</p>
+</div>
 <button onClick={() => onAddProduct(product)}>
 Añadir al carrito
 </button>
